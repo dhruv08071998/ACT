@@ -1,0 +1,276 @@
+{
+  "name": "ChatSDKModules",
+  "version": "4.0.0",
+  "summary": "Chat SDK - Mobile messaging framework for iOS",
+  "homepage": "http://chatsdk.co",
+  "license": "Commercial",
+  "authors": {
+    "Ben Smiley": "ben@chatsdk.co"
+  },
+  "source": {
+    "git": "https://github.com/chat-sdk/chat-sdk-ios.git",
+    "tag": "4.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "subspecs": [
+    {
+      "name": "StickerMessage",
+      "source_files": [
+        "StickerMessage/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatStickerMessage": [
+          "StickerMessage/Assets/**/*",
+          "StickerMessage/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDKModules/KeyboardOverlayOptions": [
+
+        ]
+      }
+    },
+    {
+      "name": "KeyboardOverlayOptions",
+      "source_files": [
+        "KeyboardOverlayOptions/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatKeyboardOverlayOptions": [
+          "KeyboardOverlayOptions/Assets/**/*",
+          "KeyboardOverlayOptions/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "Diagnostic",
+      "source_files": [
+        "Diagnostic/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatDiagnostic": [
+          "Diagnostic/Assets/**/*",
+          "Diagnostic/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "ContactBook",
+      "source_files": [
+        "ContactBook/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatContactBook": [
+          "ContactBook/Assets/**/*",
+          "ContactBook/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "VideoMessage",
+      "source_files": [
+        "VideoMessage/Classes/**/*"
+      ],
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "AudioMessage",
+      "source_files": [
+        "AudioMessage/Classes/**/*"
+      ],
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "CallSDK",
+      "source_files": [
+        "CallSDK/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "CallSDK": [
+          "CallSDK/Assets/**/*",
+          "CallSDK/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseNearbyUsers",
+      "source_files": [
+        "FirebaseNearbyUsers/Classes/**/*",
+        "FirebaseNearbyUsers/geofire-objc/GeoFire/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseNearbyUsers": [
+          "FirebaseNearbyUsers/Assets/**/*",
+          "FirebaseNearbyUsers/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseReadReceipts",
+      "source_files": [
+        "FirebaseReadReceipts/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseReadReceipts": [
+          "FirebaseReadReceipts/Assets/**/*",
+          "FirebaseReadReceipts/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseTypingIndicator",
+      "source_files": [
+        "FirebaseTypingIndicator/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseTypingIndicator": [
+          "FirebaseTypingIndicator/Assets/**/*",
+          "FirebaseTypingIndicator/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseBroadcast",
+      "source_files": [
+        "FirebaseBroadcast/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseBroadcast": [
+          "FirebaseBroadcast/Assets/**/*",
+          "FirebaseBroadcast/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseBlocking",
+      "source_files": [
+        "FirebaseBlocking/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseBlocking": [
+          "FirebaseBlocking/Assets/**/*",
+          "FirebaseBlocking/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseLastOnline",
+      "source_files": [
+        "FirebaseLastOnline/Classes/**/*"
+      ],
+      "resource_bundles": {
+        "ChatFirebaseLastOnline": [
+          "FirebaseLastOnline/Assets/**/*",
+          "FirebaseLastOnline/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "ChatSDK/FirebaseAdapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "XMPPAdapter",
+      "source_files": "XMPPAdapter/Classes/**/*",
+      "resource_bundles": {
+        "ChatXMPPAdapter": [
+          "XMPPAdapter/Assets/**/*",
+          "XMPPAdapter/Interface/**/*"
+        ]
+      },
+      "dependencies": {
+        "ChatSDK": [
+
+        ],
+        "XMPPFramework": [
+          "~> 3.7.0"
+        ],
+        "SAMKeychain": [
+
+        ]
+      }
+    }
+  ]
+}

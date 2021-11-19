@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-ColabCare/Pods-ColabCare-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/ChatSDK/ChatCore.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ChatSDK/ChatCoreData.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ChatSDK/ChatFirebaseSocialLogin.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ChatSDK/ChatUI.bundle
+${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle
+${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle

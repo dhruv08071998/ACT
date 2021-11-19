@@ -1,0 +1,100 @@
+{
+  "name": "ChatSDKPro",
+  "version": "5.0.3",
+  "summary": "Chat SDK - Mobile messaging framework for iOS",
+  "homepage": "http://chatsdk.co",
+  "license": "Commercial",
+  "authors": {
+    "Ben Smiley": "ben@chatsdk.co"
+  },
+  "source": {
+    "git": "https://github.com/chat-sdk/chat-sdk-ios.git",
+    "tag": "4.0.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "Core/*"
+      ],
+      "dependencies": {
+        "ChatSDK": [
+
+        ]
+      },
+      "vendored_frameworks": "ChatSDKPro/Licensing/Licensing.framework"
+    },
+    {
+      "name": "ContactBook",
+      "vendored_frameworks": "ChatSDKPro/ContactBookModule/ContactBookModule.framework",
+      "dependencies": {
+        "ChatSDKPro/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Encryption",
+      "vendored_frameworks": [
+        "ChatSDKPro/EncryptionModule/EncryptionModule.framework",
+        "ChatSDKPro/EncryptionModule/VirgilCrypto.framework",
+        "ChatSDKPro/EncryptionModule/VirgilCryptoAPI.framework",
+        "ChatSDKPro/EncryptionModule/VirgilCryptoApiImpl.framework",
+        "ChatSDKPro/EncryptionModule/VSCCrypto.framework",
+        "ChatSDKPro/EncryptionModule/VirgilSDK.framework"
+      ],
+      "dependencies": {
+        "ChatSDKPro/Core": [
+
+        ],
+        "SAMKeychain": [
+
+        ],
+        "QRCodeReader.swift": [
+          "~> 10.1.0"
+        ]
+      }
+    },
+    {
+      "name": "Firebase",
+      "vendored_frameworks": "ChatSDKPro/FirebaseModules/FirebaseModules.framework",
+      "dependencies": {
+        "ChatSDKPro/Core": [
+
+        ],
+        "ChatSDKFirebase/Adapter": [
+
+        ]
+      }
+    },
+    {
+      "name": "Message",
+      "vendored_frameworks": "ChatSDKPro/MessageModules/MessageModules.framework",
+      "dependencies": {
+        "ChatSDKPro/Core": [
+
+        ],
+        "FLAnimatedImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "FirebaseNearbyUsers",
+      "vendored_frameworks": "ChatSDKPro/FirebaseNearbyUsersModule/FirebaseNearbyUsersModule.framework",
+      "dependencies": {
+        "ChatSDKPro/Core": [
+
+        ],
+        "ChatSDKFirebase/Adapter": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

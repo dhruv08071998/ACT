@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>681604230201-o03im2ho2jjui0pr7qucgiodv2hta5aq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.681604230201-o03im2ho2jjui0pr7qucgiodv2hta5aq</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>681604230201-39rv03iduq237hfaku1993gbs2cpfjbd.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDC1YFCN2KQXKokd7YbuloQjwO1pQ8LljA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>681604230201</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.buffalo.collab-care</string>
+	<key>PROJECT_ID</key>
+	<string>collaborative-care-b5947</string>
+	<key>STORAGE_BUCKET</key>
+	<string>collaborative-care-b5947.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:681604230201:ios:e747932b4d8c0b5a7a31e8</string>
+	<key>DATABASE_URL</key>
+	<string>https://collaborative-care-b5947-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
